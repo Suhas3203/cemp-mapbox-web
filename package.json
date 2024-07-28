@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "predeploy": "ng build --prod --base-href /your-repo-name/",
-    "deploy": "gh-pages -d dist/your-project-name"
+    "predeploy": "ng build --configuration production --base-href /cemp-mapbox-web/",
+    "deploy": "gh-pages -d dist/cemp-web"
   },
   "private": true,
   "dependencies": {
