@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "predeploy": "ng build --prod --base-href /your-repo-name/",
+    "deploy": "gh-pages -d dist/your-project-name"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +31,8 @@
     "@angular/compiler-cli": "^14.2.0",
     "@types/jasmine": "~4.0.0",
     "@types/mapbox-gl": "^3.1.0",
+    "angular-cli-ghpages": "^2.0.1",
+    "gh-pages": "^6.1.1",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
